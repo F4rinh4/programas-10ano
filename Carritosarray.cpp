@@ -17,7 +17,7 @@ int main()
 		
 		if (escolha < 0 || escolha > 2) 
 		{
-			cout << "Esse Nº é ínvalido";
+			cout << "Esse NÂº Ã© Ã­nvalido";
 		}
 		else
 		{
