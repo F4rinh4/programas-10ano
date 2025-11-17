@@ -12,13 +12,13 @@ int main()
 	for (i = 0; i < 4; i++)
 	{
 		pinos[i] = rand() % 2;
-		cout << pinos[i];
+		
 	}
 	do
 	{	
 	for (i = 0; i < 4; i++)
 	{
-		cout << "\nEscolha o " << i + 1 << "º número ";
+		cout << "\nEscolha o " << i + 1 << "Âº nÃºmero ";
 		cin >> escolha[i];
 		if (escolha[i] == pinos[i])
 		{
@@ -31,7 +31,7 @@ int main()
 	}
 	else
 	{
-		cout << "\nAcertaste " << acertos << " números";
+		cout << "\nAcertaste " << acertos << " nÃºmeros";
 	}
 	tentativas = 0;
 	for (i = 0; i < j; i++)
@@ -42,7 +42,8 @@ int main()
 	acertos = 0;
 	}
 	while (escolha[0] != pinos[0] || escolha[1] != pinos[1] || escolha[2] != pinos[2] || escolha[3] != pinos[3]);
-	cout << "\nPARABÉNS, ACERTASTE OS 4 NÚMEROS, TU ÉS O MASTERMIND";
-	cout << "\nNúmero de tentativas: " << tentativas;
+	cout << "\nPARABÃ‰NS, ACERTASTE OS 4 NÃšMEROS, TU Ã‰S O MASTERMIND";
+	cout << "\nNÃºmero de tentativas: " << tentativas;
 	return 0;
+
 }
