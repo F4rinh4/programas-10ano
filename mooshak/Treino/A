@@ -1,0 +1,41 @@
+#include <iostream>
+#include <string>
+#include <locale.h>
+#include <cstdlib>
+#include <time.h>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Portuguese");
+	srand(time(0));
+	int i,j,T,N, a[50000] = { }, troca = 0, somatorio;
+	cin >> T;
+	for (i = 0; i < T; i++)
+	{
+		somatorio = 0;
+		cin >> N;
+		for (j = 0; j < N; j++)
+		{
+			cin >> a[j];	
+		}
+		for (j = 0; j < N -1 ; j++)
+		{
+			if (a[j] > a[j + 1])
+			{
+				troca = a[j+1];	
+				a[j+1] = a[j];
+				a[j] = troca;	
+				somatorio++;		
+			}
+		}
+        	if (somatorio > 1)
+        {
+            cout << "NAO\n";
+        }
+        else
+        {
+            cout << "SIM\n";
+        }
+	}
+	return 0;
+}
